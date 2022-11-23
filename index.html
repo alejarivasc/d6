@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de monedas nacional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
-<h1>Conversor de monedas nacional</h1>
-<form id="form" >
-    <h3>Pesos CLP</h3>
-    <input type="number" id="inputPesos" min="0" >
-    <h4>Moneda a convertir:</h4>
-    <select id="select">
-        <option value="dolar">Dolares</option>
-        <option value="euro">Euros</option>       
-    </select>
-    <button type="submit">Buscar</button>
-</form>
-<span id="result"></span>
-<!-- <section> -->
-    <!-- <h3>Historial últimos 10 días</h3>
-    <div class="graph"> -->
-        <canvas id="myChart" ></canvas>
-    <!-- </div> -->
-<!-- </section> -->
+        <h1>Conversor de monedas nacional</h1>
+        <form id="form">
+            <h3>Pesos CLP</h3>
+            <input type="number" id="inputPesos" min="0" placeholder="Cantidad a convertir">
+            <h4>Moneda a convertir:</h4>
+            <select id="select">
+                <option value="dolar">Dolares</option>
+                <option value="euro">Euros</option>
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+        <span id="result"></span>
+        <section class="graph">
+            <h3>Historial últimos 10 días</h3>
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

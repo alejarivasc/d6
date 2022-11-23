@@ -1,26 +1,37 @@
-*{
+* {
     background-color: #FFD384;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
 
 }
 
-span{
+h1 {
+    font-weight: 700;
+}
+
+span {
     margin: 20px;
 }
-#form{
+
+#form {
     background-color: #FFF9B0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
     height: 50%;
+    box-shadow: 10px 5px 5px chocolate;
+
 }
 
-#form select, input{
+#form select,
+input {
     width: 80px;
     height: 20px;
     background-color: transparent;
@@ -28,15 +39,34 @@ span{
     height: 30px;
     text-align: center;
 }
-button{
+
+button {
     margin: 20px;
     width: 200px;
     height: 30px;
 }
-button:hover{
-    transition: ease-in-out;
+
+button:hover {
+    background-color: chocolate;
+    box-shadow: 0 0 5px chocolate, 0 0 10px chocolate;
 }
-#form h3, h4 {
+
+#result {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+#form h3,
+h4 {
     background-color: #FFF9B0;
 }
 
+.graph {
+    width: 70%;
+}
+
+.graph h3 {
+    text-align: center;
+    font-weight: 700;
+}
